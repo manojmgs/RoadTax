@@ -1,0 +1,19 @@
+1. I have created Application sclable , for different city we have to create diferent property file ,and few addition of individual logic requires.
+For now I have done every thing for Gothan city.
+
+2. Property file can be placed , classpath, or any other drive or even on git (some additional configuration required for git)
+
+3. Public holiday and day before public holiday must be defined explicitly like gothen.publicHolidays=2013-02-13 00:01:00,2013-02-12 00:00:00
+4. I have written application for Car and other vehicle will be genralised as vehicle, In future one can wite their specific implementation based on need.
+5.gothenCityTimeandTax.properties file is being read for calculation
+6. I have created bean so that all value get loaded at startup.
+7.I have written only few test cases.
+8. Json for sending request are
+
+{"vehicleType":"CAR",
+"vehicleNumber":"GO67ABC",
+"vehicleSubType":"CAR",
+"dates":["2013-01-23 08:00:00","2013-01-23 08:30:00","2013-01-23 08:55:00"]
+}
+
+vehicleType and one date is mandatory (vehicleNumber could be made mandatory in place of type)
